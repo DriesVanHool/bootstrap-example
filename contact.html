@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dries Van Hool"/>
+    <link rel="icon" href="img/icons/favicon_d.ico" type="image/ico" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e845aa06b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" id="dries" href="index.html">DVH</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="projects.html">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="interests.html">Interests</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active" href="#">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1" id="cvSquare"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="cv.html" id="cv">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Inhoud-->
+    <div class="container" id="main">
+        <div class="row" id="mainJumbo">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>Contact me</h1>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-sm-5"> 
+                <div class="row">
+                    <div class="col-xl-6" id="fotoCol">                  
+                        <img src="img/contact/driesvanhool.png" alt="dries van hool" title="Dries Van Hool" id="avatar">
+                    </div>
+                    <div class="col-xl-6" id="contactCol">  
+                        <ul id="contactList">
+                            <li>Belgium</li>
+                            <li>Antwerp</li>
+                            <li>+32.472.95.88.47</li>
+                            <li>driesvanhool@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <form action="mail.php" method="POST">
+                    <div class="form-floating mb-3">        
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name..." required>                                
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">       
+                        <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com"   required>         
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="reason" id="reason">
+                        <option>&nbsp;</option>
+                        <option value="Project">Project</option>
+                        <option value="Work">Work</option>
+                        <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-3">                        
+                        <textarea class="form-control" style="height: 10rem" id="message" name="message" placeholder="Enter your message here..." ></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <input type="submit"  class="btn btn-primary btn-xl"  value="Send">
+                </form>
+            </div>
+        </div>
+    </div>    
+    <br/><br/>
+    
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-sm-2" id="socials">
+                    <a href="https://www.linkedin.com/in/dries-van-hool-371202195/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DriesVanHool/">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://medium.com/@driesvanhool">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 order-sm-1" id="copyright">
+                    <p>©
+                        <a href="mailto:driesvanhool@gmail.com">
+                            Dries Van Hool
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
