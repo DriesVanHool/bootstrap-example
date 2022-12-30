@@ -1,4 +1,3 @@
-# cv_VanHool_Dries
-Portfolio for Thomasmore Programming graduate
+# Bootstrap example
 
-Eduweb: https://eduweb.thomasmore.be/r0895226/project2/
+Visit on [Github pages](https://driesvanhool.github.io/bootstrap-example/)
